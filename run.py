@@ -5,6 +5,18 @@
 
 import random
 
+def animation(incorrect,board):
+    if incorrect == 0:
+        print(board)
+    
+    elif incorrect == 1:
+        print ("      _________")
+        print ("     |/")
+        print ("     |")
+        print ("     |")
+        print ("     |")
+        print ("    _|_")
+
 words = ["cat", "four", "spots"]
 secret_word = random.choice(words)
 
