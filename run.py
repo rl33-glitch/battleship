@@ -9,5 +9,14 @@ guess_words = random.choice(words)
 
 def hint_gen():
     a= "roadrunner"
-    for i in range(0,len(a),3):#range from 0 to lenght with increments of 3 to get every third letter
-        b = random.choice(a)#replacing underscore with hint letter
+    for i in range(0,len(a),3): #range from 0 to length with increments of 3 to get every third letter
+        b = random.choice(a) #replacing underscore with hint letter
+
+name=input("Enter your name: ")#name input functionality
+print(f"Hello {name}, Welcome to Hangman!") # formatted strings
+print(guess_word)
+
+guess=input("Guess a letter: ")
+for i in guess_word:
+     if guess==i:
+         print(guess)
