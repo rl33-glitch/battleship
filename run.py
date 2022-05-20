@@ -20,9 +20,20 @@ def hint_gen(guess_word,c):
     
 c=hint_gen(guess_word,c) 
 
-name=input("Enter your name: ")
-print(f"Hello {name}, Welcome to Hangman!") 
-print(list(guess_word))
+def detector(guess_word,guess):
+    a=[]
+    guess_word=list(guess_word)
+    #print(r)
+    count=0
+    for i in guess_word:
+        if i==guess:
+            a.append(count)
+        count+=1
+    return a 
+
+#name=input("Enter your name: ")
+#print(f"Hello {name}, Welcome to Hangman!") 
+#print(list(guess_word))
 
 guess=input("Guess a letter: ")
 for i in list(guess_word):
