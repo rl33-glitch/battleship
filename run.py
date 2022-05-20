@@ -4,13 +4,13 @@
 
 import random
 
-words=["car", "roadrunner", "dinosaur"]
+words = ["car", "roadrunner", "dinosaur"]
 guess_words = random.choice(words)
 
 c=guess_word[:] 
-indexes=[] 
-guess_word=list(guess_word)
-correct_ans=guess_word
+indexes = [] 
+guess_word = list(guess_word)
+correct_ans = guess_word
 
 def hint_gen(guess_word,c):
     for i in range(0,len(guess_word),3): 
@@ -22,7 +22,7 @@ c=hint_gen(guess_word,c)
 
 def detector(guess_word,guess):
     a=[]
-    guess_word=list(guess_word)
+    guess_word = list(guess_word)
     #print(r)
     count=0
     for i in guess_word:
@@ -32,25 +32,29 @@ def detector(guess_word,guess):
     return a 
 
 def modifier(c,guess_word="roadrunner",guess="r"): 
-    a=detector(guess_word,guess) 
-    c=list(c) 
-    r="" 
+    a = detector(guess_word,guess) 
+    c = list(c) 
+    r ="" 
     print(c,a) 
     for i in a:
         c[i]=guess
         guess_word[i]="_" 
     for j in c: 
-        r=r+j
+        r = r+j
     return r 
 
 #name=input("Enter your name: ")
 #print(f"Hello {name}, Welcome to Hangman!") 
 #print(list(guess_word))
-
-guess=input("Guess a letter: ")
-for i in list(guess_word):
-     if guess==i:
-         print(guess)
+tries = 7
+while tries>0 and c!=correct_ans:
+    print("Try to guess this word", c)
+    guess = input("Guess a letter: ")
+    for i in guess_word:
+        if guess == i:
+            print("You guessed ",guess,"correctly")
+            c=modifier(c,guess_word,guess)
+            print(c)
 
 pics= ['''
      +---+
