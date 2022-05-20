@@ -7,6 +7,10 @@ import random
 words=["car", "roadrunner", "dinosaur"]
 guess_words = random.choice(words)
 
+c=guess_word[:] # will make a copy of the selected guessword
+indexes=[] # for use in detector function
+correct_ans=list(guess_word)
+
 def hint_gen():
     a= "roadrunner"
     for i in range(0,len(a),3): #range from 0 to length with increments of 3 to get every third letter
@@ -14,10 +18,10 @@ def hint_gen():
 
 name=input("Enter your name: ")#name input functionality
 print(f"Hello {name}, Welcome to Hangman!") # formatted strings
-print(guess_word)
+print(list(guess_word))
 
 guess=input("Guess a letter: ")
-for i in guess_word:
+for i in list(guess_word):
      if guess==i:
          print(guess)
 
