@@ -31,6 +31,18 @@ def detector(guess_word,guess):
         count+=1
     return a 
 
+def modifier(c,guess_word="roadrunner",guess="r"): 
+    a=detector(guess_word,guess) 
+    c=list(c) 
+    r="" 
+    print(c,a) 
+    for i in a:
+        c[i]=guess
+        guess_word[i]="_" 
+    for j in c: 
+        r=r+j
+    return r 
+
 #name=input("Enter your name: ")
 #print(f"Hello {name}, Welcome to Hangman!") 
 #print(list(guess_word))
