@@ -18,6 +18,12 @@ https://hangman-12.herokuapp.com/ - LInk to live site here
 
 # How to play
 
+- The User will enter there name which will then take them to a options menu with the options being Easy mode, Hardcore mode, and How to play.
+- The User will then choose a letter if the letter is part of the word then it will fill in the space where it belongs in the word.
+- If the letter that is chosen is not part of the word then one of the 6 moves the player has is lost and the hangman animation will progress
+- If the user selects 6 wrong letters then its game over 
+- If the user selects the easy game mode then some of the letters in the word will already be visible.
+- If hardcore mode is selected then no hints will be given.
 
  
 
