@@ -29,9 +29,9 @@ def hint_gen(guess_word,c): # creating the word with hints
         c = c.replace(c[i],"_") # selection for replacing with a dash
     return c
 
-def detector(guess_word,guess): # gives the index positions where guessword is present (guessword searcher )
+def detector(guess_word,guess): # gives the index positions where guessword is present 
     a = []
-    guess_word=list(guess_word)
+    guess_word = list(guess_word)
   
     count = 0
     for i in guess_word:
@@ -39,6 +39,18 @@ def detector(guess_word,guess): # gives the index positions where guessword is p
             a.append(count) # adding the count which is representing the index to the end of list a
         count += 1
     return a # indexes where the guess word is present
+
+def modifier(c,guess_word = "roadrunner",guess = "r"): # it will replaces the dashes with the correctly guessed letter
+    a = detector(guess_word,guess) #[0,4,9] a here is the positions of the guess
+    c = list(c) # c is the word with the dashes which is converted into a list here for easy manipulation
+    r = "" # will be modified c where the dashes are replaced back with the correctly guessed letter
+   
+    for i in a:
+        c[i] = guess
+        guess_word[i] = "_" # guess word will now have dashes to avoid repetition later on
+    for j in c: # converting the list c into a string r
+        r = r+j
+    return r #  creating modified c
 
 
 pics= ['''
