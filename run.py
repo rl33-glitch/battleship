@@ -113,3 +113,19 @@ while True:
     else:
         print("Please enter {1,2,3} to select a mode ")
         continue
+
+    while tries>0 and c!=correct_ans:# if tries are greated than 0 and c is not equal to correct ans
+        flag = False # indication of whether the user correctly guessed a letter
+       
+        if c != correct_ans:#if c is not the correct answer print try guess this..
+            print("\nTry to guess this word", c,"")
+            try:
+                guess=input("\nGuess a letter: ")
+                tries -= 1 
+                # range for letter is 65-90 for uppercase alphabets and 97-122 for lowercase letters
+                if ord(guess)<65 or ord(guess)>90 and ord(guess)<97 or ord(guess)>122:
+                    print("\nplease enter a letter") 
+                    continue
+            except TypeError:
+                print("\nYou entered too many characters at once , please enter only one character")
+                continue
