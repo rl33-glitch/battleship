@@ -137,7 +137,12 @@ while True:
                     flag = True
                     
             if flag == False:# if guess if false 
-                letters_used = letters_used+" "+guess#if guess is false it will add letter to already used letters on screen 
+                letters_used = letters_used + " " + guess#if guess is false it will add letter to already used letters on screen 
                 print(f"\nLetters Used: {letters_used}")
                 print(pics[animation])
                 animation += 1
+
+    if c == correct_ans:
+        print("\nYou Win!")
+    else:
+        print("\nYou Lose!, the correct word was ",guess_word)
