@@ -5,7 +5,9 @@
 import random
 
 
-words = ["car","roadrunner","dinosaur"]
+words = ["car","roadrunner","dinosaur","frazzled",
+"frizzled","nowadays","numbskull","nymph","onyx","ovary","oxidize","oxygen","pajama","peekaboo","phlegm","pixel","fuchsia",]
+
 guess_word = random.choice(words)
 
 
@@ -114,7 +116,7 @@ while True:
     elif mode == "2":#for hardcore mode if 2 is selected 
         c = hard(guess_word)
     elif mode == "3":
-        print("Hangman is a simple word guessing game.\n For the easy game mode you are given some letters.\n For hardcore game mode you have no letters")
+        print("Hangman is a simple word guessing game.\n For the easy game mode you are given some letters.\n For hardcore game mode you have no letters and have to guess with no hints")
         continue
         
     else:
