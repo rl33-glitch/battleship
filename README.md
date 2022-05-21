@@ -1,8 +1,10 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome rl33-glitch,
 
-https://hangman-12.herokuapp.com/
+## Hangman
+
+I created a simple well known word guessing game called hangman. It was designed to show some basic python knowledge with the interface being the python terminal. The user will try and guess a randomely selected word by inputting one letter at a time which will either reveal the word or lead to a loss if the word was not guessed. The player will have 6 chances and the game includes 2 game modes which are easy and hardcore. The easy gamemode will display some random letters which in turn will help the player guess the word.
+
+https://hangman-12.herokuapp.com/ - LInk to live site here
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
