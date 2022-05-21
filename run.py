@@ -96,3 +96,20 @@ tries = 7 # number of goes player has
 animation = 0
 letters_used = ""
 name = False
+
+while True:
+    if name == False:
+        name = input("Enter your name: ")
+        print(f"Hello {name}, Welcome to Hangman!") # formatted strings
+    mode = input("Choose your mode, press (1) for Easy mode, press (2) for Hardcore press (3) for How to play:  ")
+    if mode == "1":# if 1 is selected hint gen will be called and a word with hints will be generated
+        c = hint_gen(guess_word,c)
+    elif mode == "2":#for hardcore mode if 2 is selected 
+        c = hard(guess_word)
+    elif mode == "3":
+        print("How to play instructions blablabla")
+        continue
+        
+    else:
+        print("Please enter {1,2,3} to select a mode ")
+        continue
