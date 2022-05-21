@@ -114,7 +114,7 @@ while True:
     elif mode == "2":#for hardcore mode if 2 is selected 
         c = hard(guess_word)
     elif mode == "3":
-        print("How to play instructions blablabla")
+        print("Hangman is a simple word guessing game.\n For the easy game mode you are given some letters.\n For hardcore game mode you have no letters")
         continue
         
     else:
