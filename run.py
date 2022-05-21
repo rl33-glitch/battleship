@@ -129,3 +129,15 @@ while True:
             except TypeError:
                 print("\nYou entered too many characters at once , please enter only one character")
                 continue
+
+            for i in guess_word:
+                if guess == i:
+                    print("\nYou guessed ",guess,"correctly")
+                    c = modifier(c,guess_word,guess)#replaces _ with correctly guessed letter
+                    flag = True
+                    
+            if flag == False:# if guess if false 
+                letters_used = letters_used+" "+guess#if guess is false it will add letter to already used letters on screen 
+                print(f"\nLetters Used: {letters_used}")
+                print(pics[animation])
+                animation += 1
