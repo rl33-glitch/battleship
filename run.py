@@ -96,7 +96,14 @@ tries = 7 # number of goes player has
 animation = 0
 letters_used = ""
 name = False
-
+print("""
+ _    _              _   _    _____   __  __              _   _ 
+| |  | |     /\     | \ | |  / ____| |  \/  |     /\     | \ | |
+| |__| |    /  \    |  \| | | |  __  | \  / |    /  \    |  \| |
+|  __  |   / /\ \   | . ` | | | |_ | | |\/| |   / /\ \   | . ` |
+| |  | |  / ____ \  | |\  | | |__| | | |  | |  / ____ \  | |\  |
+|_|  |_| /_/    \_\ |_| \_|  \_____| |_|  |_| /_/    \_\ |_| \_|
+""")
 while True:
     if name == False:
         name = input("Enter your name: ")
