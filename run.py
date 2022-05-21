@@ -121,7 +121,7 @@ while True:
         print("Please enter {1,2,3} to select a mode ")
         continue
 
-    while tries>0 and c!=correct_ans:# if tries are greated than 0 and c is not equal to correct ans
+    while tries > 0 and c!=correct_ans:# if tries are greated than 0 and c is not equal to correct ans
         flag = False # indication of whether the user correctly guessed a letter
        
         if c != correct_ans:#if c is not the correct answer print try guess this..
