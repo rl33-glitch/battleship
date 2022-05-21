@@ -92,7 +92,7 @@ pics= ['''
 
 
 
-tries=7# number of goes player has
-animation=0
-letters_used=""
-name=False
+tries = 7 # number of goes player has
+animation = 0
+letters_used = ""
+name = False
