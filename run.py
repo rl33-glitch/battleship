@@ -17,6 +17,12 @@ correct_ans=guess_word
 indexes=[] # for use in detector function
 guess_word=list(guess_word)
 
+def hard(guess_word):
+    d=""
+    for i in range(len(guess_word)):
+        d+="_"
+    return d
+
 pics= ['''
     +---+
         |
