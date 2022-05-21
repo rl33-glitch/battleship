@@ -40,8 +40,8 @@ def detector(guess_word,guess): # gives the index positions where guessword is p
         count += 1
     return a # indexes where the guess word is present
 
-def modifier(c,guess_word = "roadrunner",guess = "r"): # it will replaces the dashes with the correctly guessed letter
-    a = detector(guess_word,guess) #[0,4,9] a here is the positions of the guess
+def modifier(c,guess_word = "roadrunner",guess = "r"): # it will replace the dashes with the correctly guessed letter
+    a = detector(guess_word,guess) # positions of the guessed letter
     c = list(c) # c is the word with the dashes which is converted into a list here for easy manipulation
     r = "" # will be modified c where the dashes are replaced back with the correctly guessed letter
    
@@ -49,7 +49,7 @@ def modifier(c,guess_word = "roadrunner",guess = "r"): # it will replaces the da
         c[i] = guess
         guess_word[i] = "_" # guess word will now have dashes to avoid repetition later on
     for j in c: # converting the list c into a string r
-        r = r+j
+        r = r + j
     return r #  creating modified c
 
 
@@ -90,3 +90,9 @@ pics= ['''
    / \  |
       ===''']
 
+
+
+tries=7# number of goes player has
+animation=0
+letters_used=""
+name=False
