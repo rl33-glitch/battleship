@@ -23,6 +23,12 @@ def hard(guess_word):
         d+="_"
     return d
 
+def hint_gen(guess_word,c): # creating the word with hints
+    for i in range(0,len(guess_word),3): # i will be used as index numbers
+                                         # range from 0 to lenght 0-9 with step size of three to get every third letter    
+        c=c.replace(c[i],"_")# selection for replacing with a dash
+    return c
+
 pics= ['''
     +---+
         |
