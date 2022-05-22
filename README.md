@@ -59,10 +59,9 @@ I created a simple well known word guessing game called hangman. It was designed
 
 ![image](https://user-images.githubusercontent.com/67274642/169689566-200bbec3-91b1-486c-a93d-7b2a7b9fe98e.png)
 
-- If the user guesses incorrectly and uses up there lives then the caption you loose will appear and the word will be revealed without the 
-correctly guessed letters.
+- If the user guesses incorrectly and uses up there lives then the caption you loose will appear and the word will be revealed.
 
-![image](https://user-images.githubusercontent.com/67274642/169689723-0603c1c9-ccf1-4d8e-bcce-78e9c47a656a.png)
+![image](https://user-images.githubusercontent.com/67274642/169713932-22d9f39d-df37-4399-9f84-83db6f51291b.png)
 
 - If the user inputs a wrong datatype like a number or two letters together then the caption please enter a letter will appear and prompt the user to retry.
 
