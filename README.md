@@ -106,14 +106,15 @@ I created a simple well known word guessing game called hangman. It was designed
   This issue was solved by changing the if statment that counts the mistakes by changing the global variable to a local.
 - The game was failing to reload back to the start menu which was solved by wrapping the code in a while loop.
 - The word revealing itself at the end was not showing the complete letters. This was solved by creating a new global variable and   adding it to the you win/you loose if statment.
-- The last hangman animation does not display correctly. This issue was solved by changing the position of the code.
+- Some of hangman animation does not display correctly. This issue was not solved by changing the position of the code.        
 
 # Deployment
 
 - Created a new account on heroku
 - Set the buildpacks to python and nodejs in that particular order 
-- linked the heroku app to the gitpod repo via the cli 
-- pushed from gitpod to heroku via the cli
+- Upload your project to github via gitpod with the same commands as previous projects. Such as *git add .* and *git commit -m*     and *git push*.
+- linked the heroku app to the gitpod repo via the cli, In order to do so run the commands *heroku login -i* and enter your heroku   account login details. Then run the command *heroku git :remote -a your-app-name* and finally *push heroku main*
+  
 
 # Credits
 
