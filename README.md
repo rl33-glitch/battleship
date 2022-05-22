@@ -33,7 +33,44 @@ https://hangman-12.herokuapp.com/ - LInk to live site here
 
 ![image](https://user-images.githubusercontent.com/67274642/169688458-3efb485f-004b-4d9c-8754-39c9559c85e9.png)
 
-- 
+- The User will then be greeted with there name and presented with the 3 options 1 will take them to the easy mode which includes hints
+2 will take them to the hardcore gamemode which does not include hints and 3 will present simple instructions. 
+
+![image](https://user-images.githubusercontent.com/67274642/169689058-cd62d61b-4089-42a0-8876-18759da926a9.png)
+
+-The how to play option consists of 3 lines giving a simple outline of how the game works.
+
+![image](https://user-images.githubusercontent.com/67274642/169689243-2b15d0a2-180d-40a5-8e14-f86a0c1737cf.png)
+
+-The easy game mode will have some of the letters already filled in giving the user a big clue and making it a easy experience
+
+![image](https://user-images.githubusercontent.com/67274642/169689341-22b6d4d9-593d-4d4e-891d-ae36a855365f.png)
+
+-The hardcore game mode does not give the user any hints which means the user will be starting from scratch.
+
+![image](https://user-images.githubusercontent.com/67274642/169689411-48be2c42-7697-4d09-9a30-9a07eea8fd81.png)
+
+-If the user guesses a letter which is correct it will display in the word the user is trying to guess.
+
+![image](https://user-images.githubusercontent.com/67274642/169689500-8585ab21-2068-4f74-bb9b-8c2e84545cd7.png)
+
+-If the user guesses a letter which is not part of the word then that letter will be displayed in a Letters Used area and the first animation of the hangman board will be displayed.
+
+![image](https://user-images.githubusercontent.com/67274642/169689566-200bbec3-91b1-486c-a93d-7b2a7b9fe98e.png)
+
+-If the user guesses incorrectly and uses up there lives then the caption you loose will appear and the word will be revealed without the 
+correctly guessed letters.
+
+![image](https://user-images.githubusercontent.com/67274642/169689723-0603c1c9-ccf1-4d8e-bcce-78e9c47a656a.png)
+
+-If the user inputs a wrong datatype like a number or two letters together then the caption please enter a letter will appear and prompt the user to retry.
+
+![image](https://user-images.githubusercontent.com/67274642/169689778-5a7de351-c338-4300-bbcf-61d212ac213d.png)
+
+
+
+
+
 
 # Lucid Chart
 
