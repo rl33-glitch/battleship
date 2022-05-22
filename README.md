@@ -67,6 +67,16 @@ correctly guessed letters.
 
 ![image](https://user-images.githubusercontent.com/67274642/169689778-5a7de351-c338-4300-bbcf-61d212ac213d.png)
 
+- If the user guesses the word correctly a you win display will appear and the 3 options menu will appear again.
+
+![image](https://user-images.githubusercontent.com/67274642/169689938-49bf936c-1e41-4b03-a225-6377ac7d2cda.png)
+
+-If the user inputs the incorrect data type for the menu such as a letter then the user will be prompted to reenter a number from 1-3.
+
+![image](https://user-images.githubusercontent.com/67274642/169689984-31478b9e-eb73-481e-91b6-fc303b66d604.png)
+
+
+
 
 
 
