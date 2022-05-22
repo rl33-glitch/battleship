@@ -14,7 +14,7 @@ I created a simple well known word guessing game called hangman. It was designed
 - [Validator](https://github.com/rl33-glitch/hangman/blob/main/README.md#Validator)
 - [Deployment](https://github.com/rl33-glitch/hangman/blob/main/README.md#Deployment)
 - [Credits](https://github.com/rl33-glitch/hangman/blob/main/README.md#Credits)
-- [Bugs]()
+- [Bugs](https://github.com/rl33-glitch/hangman/blob/main/README.md#Bugs)
 
 
 # How to play
@@ -104,6 +104,8 @@ correctly guessed letters.
 - There was numerous pep8 style issues which where resolved, Mainly indentation errors.
 - The correct letter guessed counter was adding to the mistakes counter and using up one turn.
   This issue was solved by changing the if statment that counts the mistakes by changing the global variable to a local.
+- The game was failing to reload back to the start menu which was solved by wrapping the code in a while loop.
+- The word revealing itself at the end was not showing the complete letters. This was solved by creating a new global variable and   adding it to the you win/you loose if statment.
 
 # Deployment
 
