@@ -138,7 +138,7 @@ while True:
         name = input("Enter your name: ")
         print(f"Hello {name}, Welcome to Hangman!")  # formatted strings
     mode = input(
-       "Choose your mode, press (1) for Easy mode, press" +
+       "Press (1) for Easy mode, Press" +
        "(2) for Hardcore press (3) for How to play:  ")
     if mode == "1":  # if 1 is selected a word with hints will be generated
         c = hint_gen(guess_word, c)
