@@ -162,7 +162,6 @@ while True:
             print("\nTry to guess this word", c, "")
             try:
                 guess = input("\nGuess a letter: ")
-                tries -= 1
                 # range for letter is 65-90 for uppercase alphabets and 97-122
                 # for lowercase letters
                 if ord(guess) < 65 or ord(guess) > 90 and ord(
@@ -189,6 +188,7 @@ while True:
                 print(f"\nLetters Used: {letters_used}")
                 print(pics[animation])
                 animation += 1
+                tries -= 1
 
     if c == correct_ans:
         print("\nYou Win!")
