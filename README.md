@@ -96,7 +96,7 @@ correctly guessed letters.
 - Lucid flowchart generator 
 
 # Validator
-- [Pep8] (http://pep8online.com/checkresult)
+[Pep8](http://pep8online.com/checkresult)
 
 ![image](https://user-images.githubusercontent.com/67274642/169691392-e2651932-4244-4527-b10e-dcd9832b8630.png)
 
