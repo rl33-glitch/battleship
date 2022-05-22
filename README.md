@@ -14,6 +14,7 @@ I created a simple well known word guessing game called hangman. It was designed
 - [Validator](https://github.com/rl33-glitch/hangman/blob/main/README.md#Validator)
 - [Deployment](https://github.com/rl33-glitch/hangman/blob/main/README.md#Deployment)
 - [Credits](https://github.com/rl33-glitch/hangman/blob/main/README.md#Credits)
+- [Bugs]()
 
 
 # How to play
@@ -95,17 +96,21 @@ correctly guessed letters.
 - Lucid flowchart generator 
 
 # Validator
-- Pep8 http://pep8online.com/checkresult
+- [Pep8] (http://pep8online.com/checkresult)
 
 ![image](https://user-images.githubusercontent.com/67274642/169691392-e2651932-4244-4527-b10e-dcd9832b8630.png)
 
+# Bugs
+- There was numerous pep8 style issues which where resolved, Mainly indentation errors.
+- The correct letter guessed counter was adding to the mistakes counter and using up one turn.
+  This issue was solved by changing the if statment that counts the mistakes by changing the global variable to a local.
 
 # Deployment
 
 - Created a new account on heroku
 - Set the buildpacks to python and nodejs in that particular order 
 - linked the heroku app to the gitpod repo via the cli 
-- pushed from gitpod to horoku via the cli
+- pushed from gitpod to heroku via the cli
 
 # Credits
 
