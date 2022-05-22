@@ -29,8 +29,11 @@ https://hangman-12.herokuapp.com/ - LInk to live site here
 
 # Features
 
+- The User will be presented with a enter name input under a hangman display 
 
+![image](https://user-images.githubusercontent.com/67274642/169688458-3efb485f-004b-4d9c-8754-39c9559c85e9.png)
 
+- 
 
 # Lucid Chart
 
