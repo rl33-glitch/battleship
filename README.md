@@ -84,7 +84,8 @@ I created a simple well known word guessing game called hangman. It was designed
 
 # Lucid Chart
 
-![image](https://user-images.githubusercontent.com/67274642/169691273-3fdab53b-7616-4567-9686-409e45296234.png)
+![image](https://user-images.githubusercontent.com/67274642/169714128-c7dcb432-4309-40a6-bd93-138263299b5b.png)
+
 
 
 # Technologies used
@@ -105,6 +106,7 @@ I created a simple well known word guessing game called hangman. It was designed
   This issue was solved by changing the if statment that counts the mistakes by changing the global variable to a local.
 - The game was failing to reload back to the start menu which was solved by wrapping the code in a while loop.
 - The word revealing itself at the end was not showing the complete letters. This was solved by creating a new global variable and   adding it to the you win/you loose if statment.
+- The last hangman animation does not display correctly. This issue was solved by changing the position of the code.
 
 # Deployment
 
