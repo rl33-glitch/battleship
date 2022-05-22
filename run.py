@@ -50,7 +50,9 @@ def hint_gen(guess_word, c):  # creating the word with hints
     return c
 
 
-def detector(guess_word, guess):  # gives the index positions where guessword is present
+# gives the index positions where guessword is present
+
+def detector(guess_word, guess):
     a = []
     guess_word = list(guess_word)
 
@@ -70,8 +72,8 @@ def modifier(c, guess_word="roadrunner", guess="r"):
     # c is the word with the dashes which is converted into a list here for
     # easy manipulation
     c = list(c)
-    r = ""  # will be modified c where the dashes are replaced back with the correctly guessed letter
-
+    r = ""
+# will be modified c where the dashes are replaced back with the correct letter
     for i in a:
         c[i] = guess
         # guess word will now have dashes to avoid repetition later on
@@ -136,23 +138,27 @@ while True:
         name = input("Enter your name: ")
         print(f"Hello {name}, Welcome to Hangman!")  # formatted strings
     mode = input(
-        "Choose your mode, press (1) for Easy mode, press (2) for Hardcore press (3) for How to play:  ")
-    if mode == "1":  # if 1 is selected hint gen will be called and a word with hints will be generated
+       "Choose your mode, press (1) for Easy mode, press" +
+       "(2) for Hardcore press (3) for How to play:  ")
+    if mode == "1":  # if 1 is selected a word with hints will be generated
         c = hint_gen(guess_word, c)
     elif mode == "2":  # for hardcore mode if 2 is selected
         c = hard(guess_word)
     elif mode == "3":
-        print("Hangman is a simple word guessing game.\n For the easy game mode you are given some letters.\n For hardcore game mode you have no letters and have to guess with no hints")
+        print("Hangman is a simple word guessing game.\n" +
+              "For the easy game mode you are given some letters.\n" +
+              "For hardcore game mode you have no letters and have to guess" +
+              "with no hints")
         continue
 
     else:
         print("Please enter {1,2,3} to select a mode ")
         continue
 
-    while tries > 0 and c != correct_ans:  # if tries are greated than 0 and c is not equal to correct ans
-        flag = False  # indication of whether the user correctly guessed a letter
+    while tries > 0 and c != correct_ans:  # if tries are greated than 0 c = 0
+        flag = False  # indication of whether the user correctly guessed letter
 
-        if c != correct_ans:  # if c is not the correct answer print try guess this..
+        if c != correct_ans:  # if c is not the correct answer print try guess
             print("\nTry to guess this word", c, "")
             try:
                 guess = input("\nGuess a letter: ")
@@ -165,7 +171,8 @@ while True:
                     continue
             except TypeError:
                 print(
-                    "\nYou entered too many characters at once , please enter only one character")
+                    "\nYou entered too many characters at once" +
+                    ", please enter only one character")
                 continue
 
             for i in guess_word:
@@ -175,7 +182,7 @@ while True:
                     c = modifier(c, guess_word, guess)
                     flag = True
 
-            if flag == False:  # if guess if false
+            if not flag:  # if guess if false
                 # if guess is false it will add letter to already used letters
                 # on screen
                 letters_used = letters_used + " " + guess
